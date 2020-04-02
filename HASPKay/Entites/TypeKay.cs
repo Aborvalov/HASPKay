@@ -3,7 +3,7 @@
     /// <summary>
     /// Тип ключа.
     /// </summary>
-    enum TypeKay
+    public enum TypeKay
     {
         Net,
         Time,

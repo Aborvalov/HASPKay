@@ -8,7 +8,7 @@
         /// <summary>
         /// Идентификатор.
         /// </summary>
-        public int Id { get; set; }
+        public int CompanyId { get; set; }
         /// <summary>
         /// Наименование.
         /// </summary>

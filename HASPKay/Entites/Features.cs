@@ -4,12 +4,12 @@ namespace Entites
 {  /// <summary>
    /// Особенности ключа.
    /// </summary>
-    public class Features
+    public class Feature
     {
         /// <summary>
         /// Идентификатор.
         /// </summary>
-        public int Id { get; set; }
+        public int FeatureId { get; set; }
         /// <summary>
         /// Номер.
         /// </summary>

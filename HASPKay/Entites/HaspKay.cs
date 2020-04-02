@@ -10,7 +10,7 @@ namespace Entites
         /// <summary>
         /// Идентификатор.
         /// </summary>
-        public int Id { get; set; }
+        public int HaspKayId { get; set; }
         /// <summary>
         /// Номер ключа.
         /// </summary>
@@ -18,11 +18,11 @@ namespace Entites
         /// <summary>
         /// Тип ключа.
         /// </summary>
-        public string TypeKay { get; set; }
+        public TypeKay TypeKay { get; set; }
         /// <summary>
         /// Особенности
         /// </summary>
-        public List<Features> FeaturesKeys { get; set; }
+        public List<Feature> FeaturesKeys { get; set; }
         /// <summary>
         /// Компания пользователь.
         /// </summary>
