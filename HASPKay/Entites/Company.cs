@@ -25,5 +25,9 @@
         /// Контакное лицо.
         /// </summary>
         public string ContactPerson { get; set; }
+        /// <summary>
+        /// HASP-ключ компании.
+        /// </summary>
+        public HaspKey Key { get; set; }
     }
 }

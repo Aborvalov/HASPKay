@@ -5,12 +5,12 @@ namespace Entites
     /// <summary>
     /// HASP-ключ.
     /// </summary>
-    public class HaspKay
+    public class HaspKey
     {
         /// <summary>
         /// Идентификатор.
         /// </summary>
-        public int HaspKayId { get; set; }
+        public int HaspKeyId { get; set; }
         /// <summary>
         /// Номер ключа.
         /// </summary>
@@ -18,7 +18,7 @@ namespace Entites
         /// <summary>
         /// Тип ключа.
         /// </summary>
-        public TypeKay TypeKay { get; set; }
+        public TypeKey TypeKey { get; set; }
         /// <summary>
         /// Особенности
         /// </summary>
@@ -26,6 +26,6 @@ namespace Entites
         /// <summary>
         /// Компания пользователь.
         /// </summary>
-        public Company Company { get; set; }
+        public List<Company> Company { get; set; }
     }
 }

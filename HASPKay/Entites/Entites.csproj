@@ -43,9 +43,9 @@
   <ItemGroup>
     <Compile Include="Company.cs" />
     <Compile Include="Features.cs" />
-    <Compile Include="HaspKay.cs" />
+    <Compile Include="HaspKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeKay.cs" />
+    <Compile Include="TypeKey.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
