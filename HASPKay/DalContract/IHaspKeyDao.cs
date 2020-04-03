@@ -3,13 +3,8 @@ using System.Collections.Generic;
 
 namespace DalContract
 {
-    public interface IHaspKeyDao
+    public interface IHaspKeyDao : IContractEntites<HaspKey>
     {
-        bool Add(HaspKey kay);
-        bool Remove(int id);
-        bool Update(HaspKey kay);
-        IEnumerable<HaspKey> GetAll();
-        HaspKey GetById(int id);
         HaspKey GetByCompany(Company company);
         /// <summary>
         /// Поиск просроченных ключей.
