@@ -78,23 +78,16 @@ namespace Logic
 
 
             
-            /*
-            List<Company> companies = new List<Company> { company };
-            List<Feature> features = new List<Feature> { feature };
-
-            HaspKey key = new HaspKey()
-            {
-                Number = number.Trim(),
-                Company = companies,
-                TypeKey = type,
-                FeaturesKeys = features,
-                AddInfo = other.Trim(),
-            };
-
-            if (haspKeyDao.Add(key))
+            key.Company.Add(company);
+            key.FeaturesKeys.Add(feature);
+            key.Number = number.Trim();
+            key.TypeKey = type;
+            key.AddInfo += other.Trim();
+                        
+            if (haspKeyDao.Update(key))
                 return key;
-            */
-            throw new InvalidOperationException("Не удалсь создать HASPKey.");
+
+            throw new InvalidOperationException("Не удалсь обновить HASP-ключ.");
         }
     }
 }
