@@ -4,8 +4,8 @@ namespace DalContract
 {
     public  interface IContractEntites<TEntites>
     {
-        bool Add(TEntites entity);
-        bool Remove(TEntites id);
+        int Add(TEntites entity);
+        bool Remove(int id);
         bool Update(TEntites entity);
         IEnumerable<TEntites> GetAll();
         TEntites GetById(int id);

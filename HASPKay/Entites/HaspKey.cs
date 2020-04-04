@@ -14,7 +14,7 @@ namespace Entites
         /// <summary>
         /// Номер ключа.
         /// </summary>
-        public int Number { get; set; }
+        public string Number { get; set; }
         /// <summary>
         /// Тип ключа.
         /// </summary>
@@ -27,5 +27,9 @@ namespace Entites
         /// Компания пользователь.
         /// </summary>
         public List<Company> Company { get; set; }
+        /// <summary>
+        /// Дополнительная информация.
+        /// </summary>
+        public string AddInfo { get; set; }
     }
 }
