@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace LogicContract
 {
-    interface ICompanyLogic
+    public interface ICompanyLogic
     {
-        Company Save(string name, string address, string phone, string contactPerson);
-        Company Update(int id, string name, string address, string phone, string contactPerson);
+        Company Save(string name, string address, string phone, string contactPerson, HaspKey key);
+        Company Update(int id, string name, string address, string phone, string contactPerson, HaspKey key);
         bool Remove(int id);
         List<Company> GetAll();
         Company GetByNumberKey(int numberKey);
