@@ -71,7 +71,33 @@ namespace Logic
 
 
 
-            throw new NotImplementedException();
+
+
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Наименование компании не может быть null или пустым.", nameof(name));
+            if (string.IsNullOrWhiteSpace(address))
+                throw new ArgumentException("Адрес компании не может быть null или пустым.", nameof(address));
+            if (string.IsNullOrWhiteSpace(address))
+                throw new ArgumentException("Адрес компании не может быть null или пустым.", nameof(address));
+            if (string.IsNullOrWhiteSpace(phone))
+                throw new ArgumentException("Телефон контактного лица не может быть null или пустым.", nameof(phone));
+            if (string.IsNullOrWhiteSpace(contactPerson))
+                throw new ArgumentException("Контактное лицо не может быть null или пустым.", nameof(contactPerson));
+
+
+
+
+
+            company.Address = address.Trim();
+            company.ContactPerson = contactPerson.Trim();
+            company.Key = key;
+            company.Name = name.Trim();
+            company.Phone = phone.Trim();
+
+            if (companyDAO.Update(company))
+                return company;
+
+            throw new InvalidOperationException("Не удалсь обновить компанию.");
         }
     }
 }
