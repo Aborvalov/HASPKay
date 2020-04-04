@@ -62,7 +62,11 @@ namespace Logic
             HaspKey key = haspKeyDao.GetById(id);
 
             if (key == null)
-                throw new ArgumentException("Неверный id HASP-ключ.", nameof(id));           
+                throw new ArgumentException("Неверный id HASP-ключ.", nameof(id));         
+            
+
+
+
             if (string.IsNullOrWhiteSpace(number))
                 throw new ArgumentException("Номер не может быть null или пустым.", nameof(number));
             if (feature == null)
