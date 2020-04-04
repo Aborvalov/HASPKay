@@ -5,7 +5,7 @@ namespace DalContract
 {
     public interface IHaspKeyDao : IContractEntites<HaspKey>
     {
-        HaspKey GetByCompany(Company company);
+        IEnumerable<HaspKey> GetByCompany(Company company);
         /// <summary>
         /// Поиск просроченных ключей.
         /// </summary>
