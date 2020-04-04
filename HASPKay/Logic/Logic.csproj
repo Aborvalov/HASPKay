@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6BD4E8B-A284-43EE-B871-495D14B7ED44}</ProjectGuid>
+    <ProjectGuid>{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogicContract</RootNamespace>
-    <AssemblyName>LogicContract</AssemblyName>
+    <RootNamespace>Logic</RootNamespace>
+    <AssemblyName>Logic</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICompanyLogic.cs" />
-    <Compile Include="IHASPKeyLogic.cs" />
+    <Compile Include="HaspKeyLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DalContract\DalContract.csproj">
+      <Project>{efbd69fb-3dad-4f12-ba77-6dc54fd9084f}</Project>
+      <Name>DalContract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entites\Entites.csproj">
       <Project>{b1f469b4-9509-49a9-bc9f-7e5205b73583}</Project>
       <Name>Entites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicContract\LogicContract.csproj">
+      <Project>{d6bd4e8b-a284-43ee-b871-495d14b7ed44}</Project>
+      <Name>LogicContract</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

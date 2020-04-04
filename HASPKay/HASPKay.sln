@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicContract", "LogicContr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{50884FFD-FF80-4470-A9BD-B27D016A8239}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D6BD4E8B-A284-43EE-B871-495D14B7ED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6BD4E8B-A284-43EE-B871-495D14B7ED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6BD4E8B-A284-43EE-B871-495D14B7ED44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{EFBD69FB-3DAD-4F12-BA77-6DC54FD9084F} = {1400FA7A-B5E3-4002-B2EF-2481F68DFB1C}
 		{B1F469B4-9509-49A9-BC9F-7E5205B73583} = {D6102A67-85E9-436C-AF16-32C049B0B492}
 		{D6BD4E8B-A284-43EE-B871-495D14B7ED44} = {50884FFD-FF80-4470-A9BD-B27D016A8239}
+		{79276B86-AE6A-4F8F-BF54-A86CDFA7B55E} = {50884FFD-FF80-4470-A9BD-B27D016A8239}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6716A0-2206-4577-920F-659908CA1511}
