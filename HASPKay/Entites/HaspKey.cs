@@ -7,6 +7,11 @@ namespace Entites
     /// </summary>
     public class HaspKey
     {
+        public HaspKey()
+        {
+            this.Features = new HashSet<Feature>();
+            this.Companies = new HashSet<Company>();
+        }
         /// <summary>
         /// Идентификатор.
         /// </summary>
@@ -22,11 +27,15 @@ namespace Entites
         /// <summary>
         /// Особенности
         /// </summary>
-        public List<Feature> FeaturesKeys { get; set; }
+       // public List<Feature> FeaturesKeys { get; set; }
+       public virtual ICollection<Feature> Features { get; private set; }
+
         /// <summary>
         /// Компания пользователь.
         /// </summary>
-        public List<Company> Company { get; set; }
+        //public List<Company> Company { get; set; }
+        public virtual ICollection<Company> Companies { get; private set;}
+
         /// <summary>
         /// Дополнительная информация.
         /// </summary>

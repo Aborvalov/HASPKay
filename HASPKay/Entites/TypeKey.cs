@@ -3,11 +3,9 @@
     /// <summary>
     /// Тип ключа.
     /// </summary>
-    public enum TypeKey
+    public class TypeKey
     {
-        Net,
-        Time,
-        NetTime,
-        Pro,
+        public int TypeKeyId { get; set; }
+        public string Name { get; set; }
     }
 }
