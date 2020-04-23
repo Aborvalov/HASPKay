@@ -44,6 +44,7 @@
     <Compile Include="IContractEntites.cs" />
     <Compile Include="ICompanyDAO.cs" />
     <Compile Include="IHaspKeyDAO.cs" />
+    <Compile Include="ITypeKeyDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

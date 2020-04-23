@@ -1,5 +1,4 @@
-﻿using DalContract;
-using Entites;
+﻿using Entites;
 using LogicContract;
 using System;
 using System.Collections.Generic;
@@ -36,18 +35,15 @@ namespace Logic
                 throw new NullReferenceException("Компания не может быть null.");
             if(Enum.IsDefined(typeof(TypeKey), type))
                 throw new ArgumentException("Неправильный тип ключа.", nameof(type));
-
-            List<Company> companies = new List<Company>{company};
-            List<Feature> features  = new List<Feature>{feature};
-
+                        
             HaspKey key = new HaspKey()
             {
-                Number       = number.Trim(),
-                Company      = companies,
+                Number       = number.Trim(),                
                 TypeKey      = type,
-                FeaturesKeys = features,
                 AddInfo      = other.Trim(),
             };
+            key.Companies.Add(company);
+            key.Features.Add(feature);
 
             int id = haspKeyDao.Add(key);
             if (id == -1)
@@ -78,8 +74,8 @@ namespace Logic
 
 
             
-            key.Company.Add(company);
-            key.FeaturesKeys.Add(feature);
+            key.Companies.Add(company);
+            key.Features.Add(feature);
             key.Number = number.Trim();
             key.TypeKey = type;
             key.AddInfo += other.Trim();
