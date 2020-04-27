@@ -23,7 +23,7 @@ namespace DalDB
         }
 
         public IEnumerable<Company> GetAll() => db.Companys.ToList();
-        public Company GetByFeature(Feature feature) /*{throw new NotImplementedException(); }//*/=> db.Companys.SingleOrDefault(c => c.HaspKey.Features.Where(f => f.FeatureId == f.FeatureId).Any());
+        public Company GetByFeature(Feature feature) => db.Companys.SingleOrDefault(c => c.HaspKey.Features.Where(f => f.FeatureId == f.FeatureId).Any());
 
         public Company GetById(int id) => db.Companys.SingleOrDefault(c => c.CompanyId == id);
 
