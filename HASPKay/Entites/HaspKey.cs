@@ -27,14 +27,14 @@ namespace Entites
         /// <summary>
         /// Особенности
         /// </summary>
-       // public List<Feature> FeaturesKeys { get; set; }
-       public ICollection<Feature> Features { get; set; }
+        public List<Feature> Features { get; set; }
+      // public ICollection<Feature> Features { get; set; }
 
         /// <summary>
         /// Компания пользователь.
         /// </summary>
-        //public List<Company> Company { get; set; }
-        public ICollection<Company> Companies { get; set;}
+        public List<Company> Companies { get; set; }
+       // public ICollection<Company> Companies { get; set;}
 
         /// <summary>
         /// Дополнительная информация.

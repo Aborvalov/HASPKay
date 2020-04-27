@@ -23,7 +23,7 @@ namespace DalDB
 
         public IEnumerable<HaspKey> GetAll() => db.HaspKeys.ToList();
 
-        public IEnumerable<HaspKey> GetByCompany(Company company) => db.HaspKeys.Where(hk => hk.Companies == company).ToList();
+        public IEnumerable<HaspKey> GetByCompany(Company company) => db.HaspKeys.Where(hk => hk.Companies.Where(com => com.CompanyId == company.CompanyId).Any()).ToList();
 
         public HaspKey GetById(int id) => db.HaspKeys.SingleOrDefault(hs => hs.HaspKeyId == id);
 

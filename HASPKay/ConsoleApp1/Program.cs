@@ -31,6 +31,7 @@ namespace ConsoleApp1
                 Address = "{jkmeyjdf",
                 ContactPerson = "qwe qwe qwe",
                 Phone = "123-123-123",
+                CompanyId = 1,
             };
             var Key = new HaspKey
             {
@@ -49,7 +50,8 @@ namespace ConsoleApp1
             {
                 test = new DbHaspKeyDAO(db);
                  number = test.Add(Key);
-                var t1 = test.GetByPastDue();
+                var t1 = test.GetById(1);
+                var t2 = test.GetByCompany(com);
 
             }
 
