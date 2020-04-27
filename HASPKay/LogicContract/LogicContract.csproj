@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ICompanyLogic.cs" />
     <Compile Include="IHASPKeyLogic.cs" />
+    <Compile Include="ITypeKeyLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

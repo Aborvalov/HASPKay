@@ -4,12 +4,10 @@ using LogicContract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logic
 {
-    class CompanyLogic : ICompanyLogic
+    public class CompanyLogic : ICompanyLogic
     {
         private ICompanyDAO companyDAO;
         public CompanyLogic(ICompanyDAO companyDAO)
