@@ -1,5 +1,5 @@
 ﻿using DalContract;
-using Entites;
+using Entities;
 using LogicContract;
 using System;
 using System.Collections.Generic;

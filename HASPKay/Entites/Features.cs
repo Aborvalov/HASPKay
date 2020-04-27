@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Entites
+namespace Entities
 {  /// <summary>
    /// Особенности ключа.
    /// </summary>

@@ -1,4 +1,4 @@
-﻿namespace Entites
+﻿namespace Entities
 {
     /// <summary>
     /// Тип ключа.

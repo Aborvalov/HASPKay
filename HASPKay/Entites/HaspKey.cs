@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Entites
+namespace Entities
 {
     /// <summary>
     /// HASP-ключ.

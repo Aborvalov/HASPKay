@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Entites
+namespace Entities
 {
     public class EntitesContext : DbContext
     {

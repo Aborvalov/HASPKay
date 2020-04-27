@@ -65,9 +65,9 @@
       <Project>{e9a88b85-f640-4cc3-9cfd-b4fe1c67332c}</Project>
       <Name>DalDB</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entites\Entites.csproj">
+    <ProjectReference Include="..\Entites\Entities.csproj">
       <Project>{b1f469b4-9509-49a9-bc9f-7e5205b73583}</Project>
-      <Name>Entites</Name>
+      <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

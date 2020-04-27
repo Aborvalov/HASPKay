@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D6102A67-85E9-436C-AF16-32C049B0B492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entites", "Entites\Entites.csproj", "{B1F469B4-9509-49A9-BC9F-7E5205B73583}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entites\Entities.csproj", "{B1F469B4-9509-49A9-BC9F-7E5205B73583}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicContract", "LogicContract\LogicContract.csproj", "{D6BD4E8B-A284-43EE-B871-495D14B7ED44}"
 EndProject

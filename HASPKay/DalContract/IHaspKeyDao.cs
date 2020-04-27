@@ -1,4 +1,4 @@
-﻿using Entites;
+﻿using Entities;
 using System.Collections.Generic;
 
 namespace DalContract
