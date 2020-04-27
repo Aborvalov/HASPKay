@@ -44,12 +44,11 @@ namespace ConsoleApp1
             Key.Features.Add(f);
             Key.Companies.Add(com);
 
-
             
             using(var db = new EntitesContext())
             {
                 test = new DbHaspKeyDAO(db);
-                 number = test.Add(Key);
+                number = test.Add(Key);
                 var t1 = test.GetById(1);
                 var t2 = test.GetByCompany(com);
 
