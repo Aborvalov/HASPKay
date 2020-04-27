@@ -1,4 +1,5 @@
-﻿using Entites;
+﻿using DalContract;
+using Entites;
 using LogicContract;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Logic
 
         public Company GetByFeature(Feature feature) => companyDAO.GetByFeature(feature);
 
-        public Company GetByNumberKey(int numberKey) => companyDAO.GetByNumberKey(numberKey);
+        public Company GetByNumberKey(string numberKey) => companyDAO.GetByNumberKey(numberKey);
 
         public bool Remove(int id) => companyDAO.Remove(id);
 
@@ -49,7 +50,7 @@ namespace Logic
                 Address       = address.Trim(),
                 ContactPerson = contactPerson.Trim(),
                 Phone         = phone.Trim(),
-                Key           = key,
+                HaspKey           = key,
             };
 
             int id = companyDAO.Add(company);
@@ -89,7 +90,7 @@ namespace Logic
 
             company.Address = address.Trim();
             company.ContactPerson = contactPerson.Trim();
-            company.Key = key;
+            company.HaspKey = key;
             company.Name = name.Trim();
             company.Phone = phone.Trim();
 

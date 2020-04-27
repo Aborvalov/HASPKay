@@ -9,8 +9,8 @@ namespace Entites
     {
         public HaspKey()
         {
-            this.Features = new HashSet<Feature>();
-            this.Companies = new HashSet<Company>();
+            this.Features = new List<Feature>();
+            this.Companies = new List<Company>();
         }
         /// <summary>
         /// Идентификатор.
@@ -28,13 +28,13 @@ namespace Entites
         /// Особенности
         /// </summary>
        // public List<Feature> FeaturesKeys { get; set; }
-       public virtual ICollection<Feature> Features { get; private set; }
+       public ICollection<Feature> Features { get; set; }
 
         /// <summary>
         /// Компания пользователь.
         /// </summary>
         //public List<Company> Company { get; set; }
-        public virtual ICollection<Company> Companies { get; private set;}
+        public ICollection<Company> Companies { get; set;}
 
         /// <summary>
         /// Дополнительная информация.

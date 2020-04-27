@@ -26,5 +26,7 @@ namespace Entites
         /// Дата прошивки.
         /// </summary>
         public DateTime Firmware { get; set; }
+        public int HaspKeyId { get; set; }
+        public HaspKey HaspKey { get; set; }
     }
 }

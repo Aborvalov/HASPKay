@@ -28,6 +28,7 @@
         /// <summary>
         /// HASP-ключ компании.
         /// </summary>
-        public HaspKey Key { get; set; }
+        public HaspKey HaspKey { get; set; }
+        public int HaspKeyId { get; set; }
     }
 }

@@ -4,7 +4,7 @@ namespace DalContract
 {
     public interface ICompanyDAO : IContractEntites<Company>
     {
-        Company GetByNumberKey(int numberKay);
+        Company GetByNumberKey(string numberKay);
         Company GetByFeature(Feature feature);
     }
 }

@@ -9,7 +9,7 @@ namespace LogicContract
         Company Update(int id, string name, string address, string phone, string contactPerson, HaspKey key);
         bool Remove(int id);
         List<Company> GetAll();
-        Company GetByNumberKey(int numberKey);
+        Company GetByNumberKey(string numberKey);
         Company GetByFeature(Feature feature);
     }
 }

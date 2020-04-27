@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1F469B4-9509-49A9-BC9F-7E5205B73583}</ProjectGuid>
+    <ProjectGuid>{E9A88B85-F640-4CC3-9CFD-B4FE1C67332C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Entites</RootNamespace>
-    <AssemblyName>Entites</AssemblyName>
+    <RootNamespace>DalDB</RootNamespace>
+    <AssemblyName>DalDB</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,18 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Company.cs" />
-    <Compile Include="EntitesContext.cs" />
-    <Compile Include="Features.cs" />
-    <Compile Include="HaspKey.cs" />
+    <Compile Include="DbCompanyDAO.cs" />
+    <Compile Include="DbHaspKeyDAO.cs" />
+    <Compile Include="DbTypeKeyDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DalContract\DalContract.csproj">
+      <Project>{efbd69fb-3dad-4f12-ba77-6dc54fd9084f}</Project>
+      <Name>DalContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entites\Entites.csproj">
+      <Project>{b1f469b4-9509-49a9-bc9f-7e5205b73583}</Project>
+      <Name>Entites</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
