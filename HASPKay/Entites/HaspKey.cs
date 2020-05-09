@@ -7,11 +7,6 @@ namespace Entities
     /// </summary>
     public class HaspKey
     {
-        public HaspKey()
-        {
-            this.Features = new List<Feature>();
-            this.Companies = new List<Company>();
-        }
         /// <summary>
         /// Идентификатор.
         /// </summary>
@@ -21,6 +16,10 @@ namespace Entities
         /// </summary>
         public string Number { get; set; }
         /// <summary>
+        /// Заводской номер ключа.
+        /// </summary>
+        public string SerialNumber { get; set; }
+        /// <summary>
         /// Тип ключа.
         /// </summary>
         public TypeKey TypeKey { get; set; }
@@ -28,14 +27,10 @@ namespace Entities
         /// Особенности
         /// </summary>
         public List<Feature> Features { get; set; }
-      // public ICollection<Feature> Features { get; set; }
-
         /// <summary>
         /// Компания пользователь.
         /// </summary>
         public List<Company> Companies { get; set; }
-       // public ICollection<Company> Companies { get; set;}
-
         /// <summary>
         /// Дополнительная информация.
         /// </summary>

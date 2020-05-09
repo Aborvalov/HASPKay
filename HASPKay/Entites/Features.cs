@@ -17,7 +17,7 @@ namespace Entities
         /// <summary>
         /// Срок действия.
         /// </summary>
-        public int Validity { get; set; }
+        public DateTime Validity { get; set; }
         /// <summary>
         /// Наименование.
         /// </summary>
@@ -26,7 +26,5 @@ namespace Entities
         /// Дата прошивки.
         /// </summary>
         public DateTime Firmware { get; set; }
-        public int HaspKeyId { get; set; }
-        public HaspKey HaspKey { get; set; }
     }
 }

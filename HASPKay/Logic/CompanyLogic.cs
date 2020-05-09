@@ -23,7 +23,7 @@ namespace Logic
 
         public bool Remove(int id) => companyDAO.Remove(id);
 
-        public Company Save(string name, string address, string phone, string contactPerson, HaspKey key)
+        public Company Save(string name, string address, string phone, string contactPerson, List<HaspKey> key)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Наименование компании не может быть null или пустым.", nameof(name));
@@ -48,7 +48,7 @@ namespace Logic
                 Address       = address.Trim(),
                 ContactPerson = contactPerson.Trim(),
                 Phone         = phone.Trim(),
-                HaspKey           = key,
+                HaspKeys      =  key,
             };
 
             int id = companyDAO.Add(company);
@@ -59,7 +59,7 @@ namespace Logic
             return company;
         }
 
-        public Company Update(int id, string name, string address, string phone, string contactPerson, HaspKey key)
+        public Company Update(int id, string name, string address, string phone, string contactPerson, List<HaspKey> key)
         {
             Company company = companyDAO.GetById(id);
 
@@ -88,7 +88,7 @@ namespace Logic
 
             company.Address = address.Trim();
             company.ContactPerson = contactPerson.Trim();
-            company.HaspKey = key;
+            company.HaspKeys = key;
             company.Name = name.Trim();
             company.Phone = phone.Trim();
 

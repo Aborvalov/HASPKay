@@ -22,11 +22,11 @@ namespace DalDB
         }
 
         public IEnumerable<Company> GetAll() => db.Companys.ToList();
-        public Company GetByFeature(Feature feature) => db.Companys.SingleOrDefault(c => c.HaspKey.Features.Where(f => f.FeatureId == f.FeatureId).Any());
+        public Company GetByFeature(Feature feature) => db.Companys.SingleOrDefault(c => c.HaspKeys.Features.Where(f => f.FeatureId == f.FeatureId).Any());
 
         public Company GetById(int id) => db.Companys.SingleOrDefault(c => c.CompanyId == id);
 
-        public Company GetByNumberKey(string numberKay) => db.Companys.SingleOrDefault(c => c.HaspKey.Number == numberKay);
+        public Company GetByNumberKey(string numberKay) => db.Companys.SingleOrDefault(c => c.HaspKeys.Number == numberKay);
 
         public bool Remove(int id)
         {
@@ -51,7 +51,7 @@ namespace DalDB
 
             company.Address = entity.Address;
             company.ContactPerson = entity.ContactPerson;
-            company.HaspKey = entity.HaspKey;
+            company.HaspKeys = entity.HaspKeys;
             company.Name = entity.Name;
             company.Phone = entity.Phone;
 

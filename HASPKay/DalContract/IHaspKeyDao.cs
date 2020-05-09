@@ -11,5 +11,10 @@ namespace DalContract
         /// </summary>
         /// <returns>Список просроченных ключей.</returns>
         IEnumerable<HaspKey> GetByPastDue();
+        /// <summary>
+        /// Поиск действующийх ключей.
+        /// </summary>
+        /// <returns>Список действующих ключей.</returns>
+        IEnumerable<HaspKey> GetByValid();
     }
 }

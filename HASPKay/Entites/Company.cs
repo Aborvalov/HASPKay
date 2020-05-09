@@ -1,4 +1,6 @@
-﻿namespace Entities
+﻿using System.Collections.Generic;
+
+namespace Entities
 {
     /// <summary>
     /// Компания.
@@ -12,7 +14,7 @@
         /// <summary>
         /// Наименование.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } 
         /// <summary>
         /// Адрес.
         /// </summary>
@@ -28,7 +30,6 @@
         /// <summary>
         /// HASP-ключ компании.
         /// </summary>
-        public HaspKey HaspKey { get; set; }
-        public int HaspKeyId { get; set; }
+        public List<HaspKey> HaspKeys { get; set; }
     }
 }
